@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nl li{
+    transition: 0.3s;
+}
+.nl li :hover{
+    background-color: #A855F7;
+    border-radius: 5px;
+}
+.card{
+    overflow: hidden;
+    transition: 0.3s;
+}
+.card:hover{
+    margin-top: -3px;
+    box-shadow: 0 0 8px 8px #c5c4c6;
+}
+.img-fluid{
+    overflow: hidden;
+}
+.cardimg{
+     transition: transform 0.3s ease-in-out;
+}
+.cardimg:hover{
+    transform: scale(1.1);
+}
+.l-icon{
+    color: #0d6efd;
+    transition: 0.3s;
+    border: 1px solid #0d6efd;
+}
+.l-icon:hover{
+    background-color: #0d6efd;
+    border: #0d6efd;
+    color: white;
+    border: #0d6efd;
+}
+
+ .picon span{
+   border: 1px solid black;
+   margin: 8px;
+   width: 40px;
+   height: 40px;
+   border-radius: 3px;
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.picon span:hover{
+   background-color: #0d6efd;
+}
+
+.picon span a i{
+   color: black;
+   font-size: 18px;
+   transition: 0.3s;
+}
+
+.picon span:hover a i{
+   color: white;
+}
+:root {
+    --purple-main: #A855F7;
+    --purple-dark: #7E22CE;
+    --purple-light: #F5EBFF;
+    --input-bg: #FAF5FF;
+}
+
+.bg-custom-peach {
+    background-color: var(--purple-light);
+}
+.text-custom-orange {
+    color: var(--purple-main) !important;
+}
+.btn-custom-orange {
+    background-color: var(--purple-main);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 35px;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-custom-orange:hover {
+    background-color: var(--purple-dark);
+    color: #fff;
+}
+.input-custom {
+    background-color: var(--input-bg) !important;
+    border: 1px solid transparent !important;
+    border-radius: 8px;
+    padding: 12px !important;
+}
+
+.input-custom:focus {
+    border-color: var(--purple-main) !important;
+    box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25);
+}
+.login-card {
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border-radius: 25px;
+    width: 100%;
+    max-width: 450px;
+}
+.forgot-link {
+    font-size: 0.75rem;
+    color: var(--purple-main);
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    color: var(--purple-dark);
+}
+.login {
+    background-image: url('asset/photos/lg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.htext{
+   color: #7E22CE;
+}
+
+ 
+

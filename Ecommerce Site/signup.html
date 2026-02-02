@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce Site - Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="asset/styles.css">
+  </head>
+
+  <body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+         <div class="flex-shrink-0" style="width: 25%;">
+            <a class="navbar-brand d-flex align-items-center m-0" href="#">
+                <img src="asset/photos/download (1).jpg" alt="Logo" width="100" height="80" class="me-2 rounded-5"> 
+                <h3 class="m-0 d-inline-block" style="font-weight: 700;">
+                    <span style="color: #6366F1;">Online</span> 
+                    <span style="color: #A855F7;">Shop</span>
+                </h3>
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 nl">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="details.html">Product Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="signup.html">Signup</a>
+            </li>
+          </ul>
+
+          <div class="flex-grow-1 d-flex justify-content-center ms-5 me-5">
+            <div class="input-group" style="max-width: 500px; width: 100%;">
+                <input type="text" class="form-control custom-search" placeholder="Search products...">
+                <button class="btn p-2 ml-2" type="button" style="background-color: #6366F1; color: white;">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- login section start -->
+    <div class="main-content">
+      <div class="container-fluid py-5">
+        <div class="row min-vh-100 align-items-center">
+
+          <!-- LEFT LOGIN SECTION -->
+          <div class="col-lg-6 d-flex align-items-center justify-content-center bg-white p-4">
+              <div class="card login-card p-4 p-md-5">
+                  <div class="card-body">
+
+                      <h4 class="text-custom-orange fw-bold mb-4">Signup Here</h4>
+                      <p class="text-muted small mb-1">Welcome back !!!</p>
+                      <h1 class="mb-4" style="font-weight: 850;">Sign in</h1>
+
+                      <form>
+
+                          <!-- EMAIL -->
+                          <div class="mb-3">
+                              <label class="form-label small text-secondary fw-bold">Email</label>
+                              <input type="email" class="form-control input-custom" placeholder="test@gmail.com" required>
+                          </div>
+
+                          <!-- PASSWORD -->
+                          <div class="mb-2">
+                              <div class="d-flex justify-content-between align-items-center mb-1">
+                                  <label class="form-label small text-secondary fw-bold">Password</label>
+                                  <a href="#" class="forgot-link">Forgot Password?</a>
+                              </div>
+
+                              <div class="position-relative">
+                                  <input type="password" id="password" class="form-control input-custom" required>
+                                  <i class="bi bi-eye password-toggle position-absolute top-50 end-0 translate-middle-y me-3" onclick="togglePassword()"></i>
+                              </div>
+                          </div>
+
+                          <!-- REMEMBER ME -->
+                          <div class="form-check mb-4 mt-3">
+                              <input class="form-check-input" type="checkbox" id="rememberMe">
+                              <label class="form-check-label small text-muted" for="rememberMe">
+                                  Remember me
+                              </label>
+                          </div>
+
+                          <!-- SIGN IN BUTTON -->
+                          <button type="submit" class="btn btn-custom-orange mb-3">
+                              SIGN IN &nbsp; →
+                          </button>
+
+                          <!-- SOCIAL LOGIN -->
+                          <div class="text-center my-4">
+                              <p class="text-muted small mb-3">Or sign in with</p>
+                              <button type="button" class="btn btn-outline-secondary me-2">
+                                  <i class="bi bi-google"></i> Google
+                              </button>
+                              <button type="button" class="btn btn-outline-secondary">
+                                  <i class="bi bi-facebook"></i> Facebook
+                              </button>
+                          </div>
+
+                          <!-- SIGN UP -->
+                          <p class="small text-muted text-center mt-4">
+                              I don't have an account?
+                              <a href="#" class="text-custom-orange fw-bold text-decoration-none">Sign up</a>
+                          </p>
+
+                          <!-- TERMS -->
+                          <p class="small text-muted text-center mt-3">
+                              By signing in, you agree to our
+                              <a href="#" class="text-decoration-none">Terms</a> &
+                              <a href="#" class="text-decoration-none">Privacy Policy</a>
+                          </p>
+
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <!-- RIGHT IMAGE SECTION -->
+          <div class="col-lg-6 bg-custom-peach d-none d-lg-flex align-items-center justify-content-center">
+              <img src="asset/photos/lg.jpg" alt="Login Illustration" class="img-fluid" style="max-height: 450px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- login section end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-white py-4 d-flex flex-wrap justify-content-between align-items-center">
+      <div class="ms-3">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="asset/photos/download (1).jpg" alt="Logo" width="60" height="50" class="me-2 rounded-5">
+          <h3 class="m-0" style="font-weight: 700; font-size: 1.5rem;">
+            <span style="color: #6366F1;">Online</span>
+            <span style="color: #A855F7;">Shop</span>
+          </h3>
+        </a>
+      </div>
+
+      <div class="text-center">
+        <div class="mb-1">
+          <span id="date" style="color: #6366F1;" class="me-3"></span>
+          <span id="time" style="color: #A855F7;"></span>
+        </div>
+        <p class="mb-0">&copy; 2026 Online Shop. All Rights Reserved.</p>
+      </div>
+
+      <div class="me-3">
+        <span><i class="bi bi-facebook"></i></span>
+        <span><i class="bi bi-youtube"></i></span>
+        <span><i class="bi bi-twitter"></i></span>
+        <span><i class="bi bi-instagram"></i></span>
+        <span><i class="bi bi-whatsapp"></i></span>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="asset/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

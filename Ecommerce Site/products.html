@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+
+     <!-- navbar start -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+     <div class="flex-shrink-0" style="width: 25%;">
+            <a class="navbar-brand d-flex align-items-center m-0" href="#">
+                <img src="asset/photos/download (1).jpg" alt="Logo" width="100" height="80" class="me-2 rounded-5"> 
+                <h3 class="m-0 d-inline-block" style="font-weight: 700;">
+                    <span style="color: #6366F1;">Online</span> 
+                    <span style="color: #A855F7;">Shop</span>
+                </h3>
+            </a>
+        </div>
+    <div class="flex-grow-1 d-flex justify-content-center ms-5 me-5">
+        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0 nl">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="details.html">Product Details</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="signup.html">Signup</a>
+        </li>
+      </ul>
+        <div class="flex-grow-1 d-flex justify-content-center ms-5 me-5">
+            <div class="input-group" style="max-width: 500px; width: 100%;">
+                <input type="text" class="form-control custom-search" placeholder="Search products...">
+                <button class="btn p-2 ml-2" type="button" style="background-color: #6366F1; color: white;">Search</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- navbar end -->
+
+
+<!-- breadcrumbs start -->
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Products</li>
+  </ol>
+</nav>
+
+
+<!-- breadcrumbs end -->
+
+
+ <!-- details start -->
+      
+ <!-- accordian start -->
+
+     <div class="container d-flex justify-content-between" style="width: 100vw;">
+
+      <div class="accordion" id="accordionExample" style="width: 30rem; margin-right: 50px;">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Beauty Products
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li>Serum</li>
+          <li>Day Cream</li>
+          <li>Night Cream</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Facial Product
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li>Face Mask</li>
+          <li>Face Gell</li>
+          <li>Face Scrub</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Hare Care Products
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <ul>
+        <li>Shampoo</li>
+        <li>Hair Oil</li>
+        <li>hair Serum</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Body Care Products
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <ul>
+        <li>Lotion</li>
+        <li>Body Oil</li>
+        <li>Body Serum</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- accordian end -->
+
+<!-- products start -->
+
+  <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/download (1).jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Serum</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p2.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Day Cream</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p5.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Night Cream</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+ <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p5.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Face Mask</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+ <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p2.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Face Gell</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p3.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Face Scrub</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+ <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p4.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Shampoo</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p5.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Hair Oil</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p6.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Hair Serum</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/download (1).jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Lotion</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p5.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Body Oil</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="img-fluid">
+        <img src="asset/photos/product/p4.jpg" class="card-img-top cardimg" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Body Serum</h5>
+        <div class="text-center mt-2">
+          <span class="fw-bold"><i class="bi bi-currency-dollar"></i>100</span>
+          <span><del><i class="bi bi-currency-dollar"></i>150</del></span>
+        </div>
+        <div class="text-center picon mt-2">
+          <span><a href="#"><i class="bi bi-cart3"></i></a></span>
+          <span><a href="#"><i class="bi bi-heart"></i></a></span>
+          <span><a href="#"><i class="bi bi-arrow-left-right"></i></a></span>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+     <!-- details end -->
+
+    <!-- fotter start -->
+
+     <footer class="bg-dark text-white py-4 mt-5 d-flex justify-content-between align-items-center">
+    <div class="ms-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="asset/photos/download (1).jpg" alt="Logo" width="60" height="50" class="me-2 rounded-5">
+      <h3 class="m-0" style="font-weight: 700; font-size: 1.5rem;">
+        <span style="color: #6366F1;">Online</span>
+        <span style="color: #A855F7;">Shop</span>
+      </h3>
+    </a>
+    </div>
+<div>
+    <div class="ms-5">
+        <span id="date" style="color: #6366F1;" class="me-3"></span>
+        <span id="time" style="color: #A855F7;"></span>
+    </div>
+    <p>&copy; 2026 Online Shop. All Rights Reserved.</p>
+</div>
+<div class="me-3">
+  <span><i class="bi bi-facebook"></i></span>
+  <span><i class="bi bi-youtube"></i></span>
+  <span><i class="bi bi-twitter"></i></span>
+  <span><i class="bi bi-instagram"></i></span>
+  <span><i class="bi bi-whatsapp"></i></span>
+</div>
+
+  </footer>
+
+     <!-- fotter end -->
+
+
+     <script src="asset/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
